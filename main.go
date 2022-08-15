@@ -82,7 +82,7 @@ func downloadByUrl(url, f_name string, q ...string) (bool, string) {
 		return false, "Error with internet!"
 	}
 
-	formats := video.Formats.FindByQuality(q_f) // only get videos with audio
+	formats := video.Formats.FindByQuality(q_f)
 	// fmt.Println(formats)
 	stream, _, err := client.GetStream(video, formats)
 	if err != nil {
