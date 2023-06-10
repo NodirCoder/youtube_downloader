@@ -104,8 +104,5 @@ func downloadByUrl(url, f_name string, q ...string) (bool, string) {
 
 
 func main() {
-	start()
-	
-	// getFormats()
-	// recognizeFile("qrcode.png")
+	start() // start!
 }
